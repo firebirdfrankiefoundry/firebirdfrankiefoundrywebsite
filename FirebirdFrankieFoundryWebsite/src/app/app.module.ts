@@ -12,10 +12,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DesignComponent } from './design/design.component';
+import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DesignComponent,
+    ContactComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

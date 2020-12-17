@@ -36,7 +36,7 @@ $dark-bg: #484848;
     }
 
     .ff-nav-route-active {
-        background-color: $dark-bg;
+        background-color: transparent;
         color: $ff-honey-text;
         
         font-family: 'LaUnica';
@@ -51,7 +51,7 @@ $dark-bg: #484848;
     }
     
     .ff-nav-route {
-        background-color: $dark-bg;
+        background-color: transparent;
         color: $ff-honey-text;
 
         font-family: 'AlleyGarden';
