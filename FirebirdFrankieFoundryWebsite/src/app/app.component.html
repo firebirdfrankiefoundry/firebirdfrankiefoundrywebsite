@@ -3,12 +3,22 @@
 </div>
 
 <div class="content" role="main">
+  <!-- Change to z1 when scrolled -->
+  <mat-toolbar class="ff-nav mat-elevation-z6">
+    <button mat-fab class="ff-fab-left">
+      <img src="../assets/logo/Icon Monotone Black.svg" class="fflogo">
+    </button>
+    <span class="toolbar-spacer"></span>    
+      <button routerLink="/gallery" [fxHide.xs]='route != "gallery"' mat-flat-button (click)='route = "gallery"' [ngClass]="getActiveClass('gallery')">gallery</button>
+      <button routerLink="/design"  [fxHide.xs]='route != "design"'  mat-flat-button (click)='route = "design"'  [ngClass]="getActiveClass('design')">design</button>
+      <button routerLink="/contact" [fxHide.xs]='route != "contact"' mat-flat-button (click)='route = "contact"' [ngClass]="getActiveClass('contact')">contact</button>
+    <span class="toolbar-spacer"></span>
+    <button mat-fab class="ff-fab-right">
+      <img src="../assets/icons/Burger.png" class="ffburger">
+    </button>
+</mat-toolbar>
 
-  <!-- Footer -->
+  <router-outlet></router-outlet>
   <footer>
   </footer>
-
-
 </div>
-
-<router-outlet></router-outlet>

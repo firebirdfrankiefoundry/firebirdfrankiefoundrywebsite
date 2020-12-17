@@ -8,10 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatIconModule } from '@angular/material/icon'; 
 import { MatDividerModule } from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card'
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DesignComponent } from './design/design.component';
+import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DesignComponent,
+    ContactComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +29,10 @@ import { MatDividerModule } from '@angular/material/divider';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatToolbarModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
