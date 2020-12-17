@@ -10,6 +10,8 @@
 @include mat-core();
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss\
+$ff-honey-text: #ffe4b2; 
+
 $ff-honey: (
   50: #fff4e0,
   100: #ffe4b2,
@@ -94,6 +96,12 @@ $FirebirdFrankieFoundryWebsite-theme: mat-dark-theme((
   )
 ));
 
+$FirebirdFrankieFoundryWebsite-background-color: #628cc9;
+
+$background: map-get($FirebirdFrankieFoundryWebsite-theme, background);
+$background: map_merge($background, (background: $FirebirdFrankieFoundryWebsite-background-color));
+$theme: map_merge($FirebirdFrankieFoundryWebsite-theme, (background: $background));
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -101,5 +109,26 @@ $FirebirdFrankieFoundryWebsite-theme: mat-dark-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: "LaUnica";
+  src: url("./assets/fonts/launica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlleyGarden";
+  src: url("./assets/fonts/AlleyGarden-K7WvD.otf") format("opentype");
+}
+
+html, body { 
+  height: 100%;
+  font-family: 'AlleyGarden' !important;
+  background-color: #484848;
+  color: $ff-honey-text;
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+h1, h2, h3 { font-family: 'LaUnica'; }
