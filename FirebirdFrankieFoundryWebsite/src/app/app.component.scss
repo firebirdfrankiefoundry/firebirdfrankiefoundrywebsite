@@ -26,7 +26,7 @@ $dark-bg: #484848;
     .fflogo {
         height: 30px;
         width: 30px;
-        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.4));
+        filter: invert(84%) sepia(16%) saturate(587%) hue-rotate(352deg) brightness(103%) contrast(106%) drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.4));
     }
     
     .ffburger {
