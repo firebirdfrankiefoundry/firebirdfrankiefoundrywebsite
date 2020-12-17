@@ -1,3 +1,70 @@
+$ff-honey-text: #ffe4b2; 
+$dark-bg: #484848;
+
 .toolbar-spacer {
     flex: 1 1 auto;
-  }
+}
+
+.ff-nav {
+    height: 64px;
+    background-color: $dark-bg;
+
+    .ff-fab-left {
+        height: 50px;
+        width: 50px;
+        left: 12px;
+        background-color: $dark-bg;
+    }
+
+    .ff-fab-right {
+        height: 50px;
+        width: 50px;
+        right: 12px;
+        background-color: $dark-bg;
+    }
+
+    .fflogo {
+        height: 30px;
+        width: 30px;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.4));
+    }
+    
+    .ffburger {
+        height: 19.58px;
+        width: 30px;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.4));
+    }
+
+    .ff-nav-route-active {
+        background-color: $dark-bg;
+        color: $ff-honey-text;
+        
+        font-family: 'LaUnica';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    
+    .ff-nav-route {
+        background-color: $dark-bg;
+        color: $ff-honey-text;
+
+        font-family: 'AlleyGarden';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ff-nav-route:hover {
+        text-decoration-line: underline;
+    }
+}
