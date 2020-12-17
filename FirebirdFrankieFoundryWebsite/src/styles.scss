@@ -81,8 +81,8 @@ $ff-turqoise: (
 
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$FirebirdFrankieFoundryWebsite-primary: mat-palette($ff-honey, 200, 50, 400);
-$FirebirdFrankieFoundryWebsite-accent: mat-palette($ff-turqoise, 300, 100, A700);
+$FirebirdFrankieFoundryWebsite-primary: mat-palette($ff-turqoise, 300, 100, 700);
+$FirebirdFrankieFoundryWebsite-accent: mat-palette($ff-honey, 200, 100, 300);
 
 // The warn palette is optional (defaults to red).
 $FirebirdFrankieFoundryWebsite-warn: mat-palette($mat-red);
