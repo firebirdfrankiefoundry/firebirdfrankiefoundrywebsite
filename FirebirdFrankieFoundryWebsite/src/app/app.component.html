@@ -9,9 +9,9 @@
       <img src="../assets/logo/Icon Solid Honey light.png" class="fflogo">
     </button>
     <span class="toolbar-spacer"></span>
-    <button mat-flat-button class="ff-nav-route">design</button>
-    <button mat-flat-button class="ff-nav-route-active">design</button>
-    <button mat-flat-button class="ff-nav-route">design</button>
+    <button mat-flat-button [ngClass]="{ 'ff-nav-route': route != 'gallery', 'ff-nav-route-active': route == 'gallery' }">gallery</button>
+    <button mat-flat-button [ngClass]="{ 'ff-nav-route': route != 'design', 'ff-nav-route-active': route == 'design' }">design</button>
+    <button mat-flat-button [ngClass]="{ 'ff-nav-route': route != 'contact', 'ff-nav-route-active': route == 'contact' }">contact</button>
     <span class="toolbar-spacer"></span>
     <button mat-fab class="ff-fab-right">
       <img src="../assets/icons/Burger.png" class="ffburger">
