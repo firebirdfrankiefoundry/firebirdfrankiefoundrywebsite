@@ -1,0 +1,24 @@
+@import "../../styles.scss";
+
+.socials {
+    background-color: transparent;
+    color: $ff-honey-text;
+    font-family: 'AlleyGarden';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+
+    .social-row {
+        height: 50px;
+
+        mat-icon {
+            display: inline-flex;
+            font-size: 36px;
+            line-height: 40px;
+            vertical-align: -10px;
+        }
+    }
+    
+}
