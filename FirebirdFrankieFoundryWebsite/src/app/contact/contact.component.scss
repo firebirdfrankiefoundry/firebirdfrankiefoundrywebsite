@@ -1,0 +1,31 @@
+@import "../../styles.scss";
+
+.social-icon {
+    display: inline-flex;
+    font-size: 36px;
+    line-height: 40px;
+    vertical-align: -10px;
+}
+
+.social-link {
+    color: $ff-turqoise-text;
+}
+
+.ff-form {
+    mat-form-field {
+        width: 100%;
+    }
+}
+
+.ff-card-container {
+    min-height: 750px;
+}
+
+.ff-card {
+    display: flex; 
+    justify-content: center;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    margin-right: 18px;
+}
