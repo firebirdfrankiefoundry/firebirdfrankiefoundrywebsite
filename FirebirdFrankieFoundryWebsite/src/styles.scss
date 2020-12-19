@@ -207,6 +207,10 @@ h2 {
   white-space: nowrap;
 }
 
+.spacer-25 {
+  margin-bottom: 25px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -226,4 +230,32 @@ h2 {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */    
   height: 0;
+}
+
+.ff-card-container {
+  min-height: 750px;
+}
+
+.ff-card {
+  display: flex; 
+  justify-content: center;
+}
+
+.ff-logo-with-text {
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.4));
+  text-align: center;
+}
+
+.ff-name-text {
+    background-color: transparent;
+    color: $ff-honey-text-dark;
+    
+    font-family: 'LaUnica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  
+    margin-bottom: 25px;
 }
