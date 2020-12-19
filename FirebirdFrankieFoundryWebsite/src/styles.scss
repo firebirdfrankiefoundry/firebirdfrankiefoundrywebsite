@@ -11,6 +11,7 @@
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss\
 $ff-honey-text: #ffe4b2; 
+$ff-honey-text-dark: #ffd27f;
 $dark-bg: #484848;
 
 $ff-honey: (
@@ -120,11 +121,27 @@ $theme: map_merge($FirebirdFrankieFoundryWebsite-theme, (background: $background
   src: url("./assets/fonts/AlleyGarden-K7WvD.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Josefin";
+  src: url("./assets/fonts/JosefinSansLight-ZVEll.ttf") format("opentype");
+}
+
 html, body { 
   height: 100%;
-  font-family: 'AlleyGarden' !important;
   background-color: $dark-bg;
   color: $ff-honey-text;
+}
+
+p {
+  font-family: 'Josefin' !important;
+  text-align: center;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0em;
+  margin-bottom: 25px;
 }
 
 body { 
@@ -132,8 +149,79 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
-h1, h2, h3 { font-family: 'LaUnica'; }
+h1 {
+  background-color: transparent;
+  color: $ff-honey-text-dark;
+  
+  font-family: 'LaUnica';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  margin-bottom: 25px;
+}
+
+h2 {
+  background-color: transparent;
+  color: $ff-honey-text;
+
+  font-family: 'AlleyGarden';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.container {
+  margin-left: 30px; 
+  margin-right: 30px;
+}
 
 .ff-nav .mat-button-wrapper {
   padding: 0 !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.margin-right-30 {
+  margin-right: 30px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.container-1x1 {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  height: 0;
+}
+
+.container-16x9 {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */    
+  height: 0;
 }
