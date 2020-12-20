@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card'
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
+import { MatExpansionModule } from '@angular/material/expansion'
+import { MatBadgeModule } from '@angular/material/badge'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -37,6 +39,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatCardModule,
     MatInputModule,
     MatSelectModule,
+    MatExpansionModule,
+    MatBadgeModule,
     FlexLayoutModule
   ],
   providers: [],

@@ -1,0 +1,9 @@
+@import "../../styles.scss";
+
+.expand-button {
+    font-size: 30px;
+}
+
+:host ::ng-deep .mat-expansion-panel-body{
+    padding: 0;
+}

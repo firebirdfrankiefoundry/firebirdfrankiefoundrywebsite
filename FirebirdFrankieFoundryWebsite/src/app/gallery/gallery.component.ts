@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-
+  expanded: boolean[] = [ false, false, false ]
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  expandBlock(id: number): void {
+    this.expanded[id] = !this.expanded[id];
+  }
 }

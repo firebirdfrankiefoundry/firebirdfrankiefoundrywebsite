@@ -203,6 +203,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+.margin-8 {
+  margin: 8px 8px 8px 8px;
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -213,6 +217,19 @@ h2 {
 
 .text-center {
   text-align: center;
+}
+
+.vertical-container {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 .text-right {
@@ -233,7 +250,7 @@ h2 {
 }
 
 .ff-card-container {
-  min-height: 750px;
+  min-height: 650px;
 }
 
 .ff-card {
