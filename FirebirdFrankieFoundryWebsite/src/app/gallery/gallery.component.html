@@ -1,6 +1,5 @@
 <div class="container">
     <div class="margin-top-30"></div>
-    <div>
         <mat-card>
 
             <div fxLayout="row wrap" fxLayoutGap="16px grid" >
@@ -40,12 +39,15 @@
                     </div>
                 </div>
             </div>    
-            <button style="float:right" mat-fab color="primary" class="ff-fab-right" (click)="expandBlock()">+4</button>
             <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expanded">
-            <mat-expansion-panel-header>
-            </mat-expansion-panel-header>
-                        <div [ngClass.gt-md]="" [ngClass.md]="'spacer-25'" [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
-                        <div [ngClass.gt-md]="">
+            <mat-panel-description>
+                
+            <div fxLayout="row wrap" fxLayoutGap="16px grid" >
+                <div fxFlex="50%" fxFlex.md="100%"  fxFlex.sm="100%"  fxFlex.xs="100%">
+                </div>
+                <div fxFlex="50%" fxFlex.md="100%"  fxFlex.sm="100%"  fxFlex.xs="100%">
+                    <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'" [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
+                        <div [ngClass.gt-md]="'vertical-center'">
                             <div fxLayout="row wrap" class="ff-card">
                                 <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8" >
                                     <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
@@ -69,7 +71,11 @@
                             </div>
                         </div>
                     </div>
-                </mat-expansion-panel>    
+                </div>
+            </div>    
+            </mat-panel-description>
+            </mat-expansion-panel>    
+            <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock()">{{expanded ? "-" :"+"}}4</button>
         </mat-card>
             <div fxLayout="row wrap" fxLayoutGap="16px grid" >
                 <div fxFlex="50%" fxFlex.md="100%"  fxFlex.sm="100%"  fxFlex.xs="100%">
@@ -143,7 +149,5 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
     </div>
     
