@@ -13,8 +13,7 @@
                 </div>
             </div>
             <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'"
-                    [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
+                <div [ngClass.gt-md]="'ff-card-container vertical-container'">
                     <div [ngClass.gt-md]="'vertical-center'">
                         <div fxLayout="row wrap" class="ff-card">
                             <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
@@ -41,350 +40,8 @@
                 </div>
             </div>
         </div>
-        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expandedP1">
+        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expanded[0]">
             <mat-panel-description>
-
-                <div fxLayout="row wrap" fxLayoutGap="16px grid">
-                    <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                    </div>
-                    <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                        <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'"
-                            [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
-                            <div [ngClass.gt-md]="'vertical-center'">
-                                <div fxLayout="row wrap" class="ff-card">
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </mat-panel-description>
-        </mat-expansion-panel>
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="95%" fxFlex.md="90%" fxFlex.sm="85%" fxFlex.xs="80%">
-            </div>
-            <div fxFlex="5%" fxFlex.md="10%" fxFlex.sm="15%" fxFlex.xs="20%">
-                <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(1)">
-                    <span class="expand-button">
-                        {{expandedP1 ? "-" :"+"}}6
-                    </span>
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <div class="spacer-25"></div>
-    <mat-card>
-
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                <div class="text-center" [ngClass.gt-md]="'ff-card-container vertical-container'">
-                    <div [ngClass.gt-md]="'vertical-center'">
-                        <h1>Package 2</h1>
-                        <p>Vitae turpis elementum erat egestas odio enim cursus erat. Eu sed netus varius fames neque.
-                            Ac felis at diam cursus tempor.</p>
-                    </div>
-                </div>
-            </div>
-            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'"
-                    [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
-                    <div [ngClass.gt-md]="'vertical-center'">
-                        <div fxLayout="row wrap" class="ff-card">
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                </mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expandedP2">
-            <mat-panel-description>
-
-                <div fxLayout="row wrap" fxLayoutGap="16px grid">
-                    <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                    </div>
-                    <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                        <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'"
-                            [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
-                            <div [ngClass.gt-md]="'vertical-center'">
-                                <div fxLayout="row wrap" class="ff-card">
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                        </mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-                                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%"
-                                        class="ff-card margin-8">
-                                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </mat-panel-description>
-        </mat-expansion-panel>
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="95%" fxFlex.md="90%" fxFlex.sm="85%" fxFlex.xs="80%">
-            </div>
-            <div fxFlex="5%" fxFlex.md="10%" fxFlex.sm="15%" fxFlex.xs="20%">
-                <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(2)">
-                    <span class="expand-button">
-                        {{expandedP2 ? "-" :"+"}}40
-                    </span>
-                </button>
-            </div>
-        </div>
-    </mat-card>
-    <div class="spacer-25"></div>
-    <mat-card>
-
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                <div class="text-center" [ngClass.gt-md]="'ff-card-container vertical-container'">
-                    <div [ngClass.gt-md]="'vertical-center'">
-                        <h1>Package 3</h1>
-                        <p>Vitae turpis elementum erat egestas odio enim cursus erat. Eu sed netus varius fames neque.
-                            Ac felis at diam cursus tempor.</p>
-                    </div>
-                </div>
-            </div>
-            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
-                <div [ngClass.gt-md]="'ff-card-container vertical-container'" [ngClass.md]="'spacer-25'"
-                    [ngClass.sm]="'spacer-25'" [ngClass.xs]="'spacer-25'">
-                    <div [ngClass.gt-md]="'vertical-center'">
-                        <div fxLayout="row wrap" class="ff-card">
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                                </mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expandedP3">
-            <mat-panel-description>
-
-
                 <div fxLayout="row wrap" class="ff-card">
                     <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
                         <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
@@ -405,138 +62,169 @@
                     <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
                         <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
                     </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
-                        </mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
-                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
-                    </div>
-
                 </div>
 
             </mat-panel-description>
         </mat-expansion-panel>
+        <div class="ff-card">
+            <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(0)">
+                <span class="expand-button">
+                    <mat-icon *ngIf="!expanded[0]">expand_more</mat-icon>
+                    <mat-icon *ngIf="expanded[0]">expand_less</mat-icon>
+                </span>
+            </button>
+        </div>
+    </mat-card>
+    <div class="spacer-25"></div>
+    <mat-card>
+
         <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="95%" fxFlex.md="90%" fxFlex.sm="85%" fxFlex.xs="80%">
+            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                <div class="text-center" [ngClass.gt-md]="'ff-card-container vertical-container'">
+                    <div [ngClass.gt-md]="'vertical-center'">
+                        <h1>Package 2</h1>
+                        <p>Vitae turpis elementum erat egestas odio enim cursus erat. Eu sed netus varius fames neque.
+                            Ac felis at diam cursus tempor.</p>
+                    </div>
+                </div>
             </div>
-            <div fxFlex="5%" fxFlex.md="10%" fxFlex.sm="15%" fxFlex.xs="20%">
-                <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(3)">
-                    <span class="expand-button">
-                        {{expandedP3 ? "-" :"+"}}6
-                    </span>
-                </button>
+            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                <div [ngClass.gt-md]="'ff-card-container vertical-container'">
+                    <div [ngClass.gt-md]="'vertical-center'">
+                        <div fxLayout="row wrap" class="ff-card">
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
+                                </mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expanded[1]">
+            <mat-panel-description>
+                <div fxLayout="row wrap" class="ff-card">
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
+                        </mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                </div>
+
+            </mat-panel-description>
+        </mat-expansion-panel>
+        <div class="ff-card">
+            <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(1)">
+                <span class="expand-button">
+                    <mat-icon *ngIf="!expanded[1]">expand_more</mat-icon>
+                    <mat-icon *ngIf="expanded[1]">expand_less</mat-icon>
+                </span>
+            </button>
+        </div>
+    </mat-card>
+    <div class="spacer-25"></div>
+    <mat-card>
+
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                <div class="text-center" [ngClass.gt-md]="'ff-card-container vertical-container'">
+                    <div [ngClass.gt-md]="'vertical-center'">
+                        <h1>Package 3</h1>
+                        <p>Vitae turpis elementum erat egestas odio enim cursus erat. Eu sed netus varius fames neque.
+                            Ac felis at diam cursus tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div fxFlex="50%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                <div [ngClass.gt-md]="'ff-card-container vertical-container'">
+                    <div [ngClass.gt-md]="'vertical-center'">
+                        <div fxLayout="row wrap" class="ff-card">
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
+                                </mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                            <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                                <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <mat-expansion-panel hideToggle class="mat-elevation-z0" id="expansion" disabled [expanded]="expanded[2]">
+            <mat-panel-description>
+                <div fxLayout="row wrap" class="ff-card">
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;">
+                        </mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                    <div fxFlex="30%" fxFlex.md="48%" fxFlex.sm="33%" fxFlex.xs="100%" class="ff-card margin-8">
+                        <mat-card class="container-1x1" style="border: 1px solid #c4c4c4;"></mat-card>
+                    </div>
+                </div>
+
+            </mat-panel-description>
+        </mat-expansion-panel>
+        <div class="ff-card">
+            <button mat-fab color="primary" class="ff-fab-right" (click)="expandBlock(2)">
+                <span class="expand-button">
+                    <mat-icon *ngIf="!expanded[2]">expand_more</mat-icon>
+                    <mat-icon *ngIf="expanded[2]">expand_less</mat-icon>
+                </span>
+            </button>
         </div>
     </mat-card>
 
