@@ -129,9 +129,11 @@ $theme: map_merge($FirebirdFrankieFoundryWebsite-theme, (background: $background
 }
 
 html, body { 
-  height: 100%;
   background-color: $dark-bg;
   color: $ff-honey-text;
+  height: 100%;
+  box-sizing:border-box;
+  margin: 0;
 }
 
 p {
@@ -149,6 +151,10 @@ p {
 body { 
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+footer {
+  height: 64px;
 }
 
 h1 {

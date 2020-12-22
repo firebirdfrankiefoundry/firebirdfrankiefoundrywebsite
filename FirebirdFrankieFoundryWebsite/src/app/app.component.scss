@@ -11,12 +11,19 @@ $darker-bg: #424242;
     height: 64px;
 }
 
+.ff-footer {
+    margin-top: 10px;
+    height: 64px;
+    background-color: $darker-bg;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .ff-nav {
     height: 64px;
     background-color: $darker-bg;
     position: fixed;
     z-index: 99;
-
+    
     .ff-fab-left {
         height: 50px;
         width: 50px;
@@ -55,9 +62,10 @@ $darker-bg: #424242;
         display: flex;
         align-items: center;
         text-align: center;
-        text-decoration-line: underline;
-        text-underline-offset: 16px;
-        margin-top:-10px;
+
+        height: 100%;
+        border-bottom: 3px solid $ff-honey-text-dark;
+        border-radius: 0px;
     }
     
     .ff-nav-route {
