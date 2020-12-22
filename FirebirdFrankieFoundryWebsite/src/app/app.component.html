@@ -9,9 +9,9 @@
       <img src="../assets/logo/Icon Monotone Black.svg" class="fflogo">
     </button>
     <span class="toolbar-spacer"></span>    
-      <button routerLink="/gallery" [fxHide.xs]='route != "gallery"' mat-flat-button (click)='route = "gallery"' [ngClass]="getActiveClass('gallery')" disableRipple>gallery</button>
-      <button routerLink="/design"  [fxHide.xs]='route != "design"'  mat-flat-button (click)='route = "design"'  [ngClass]="getActiveClass('design')"  disableRipple>design</button>
-      <button routerLink="/contact" [fxHide.xs]='route != "contact"' mat-flat-button (click)='route = "contact"' [ngClass]="getActiveClass('contact')" disableRipple>contact</button>
+      <button routerLink="/gallery" [fxShow.xs]='isVisible("gallery")' mat-flat-button [ngClass]="getActiveClass('gallery')" disableRipple>gallery</button>
+      <button routerLink="/design"  [fxShow.xs]='isVisible("design")'  mat-flat-button [ngClass]="getActiveClass('design')"  disableRipple>design</button>
+      <button routerLink="/contact" [fxShow.xs]='isVisible("contact")' mat-flat-button [ngClass]="getActiveClass('contact')" disableRipple>contact</button>
     <span class="toolbar-spacer"></span>
     <button mat-fab class="ff-fab-right">
       <img src="../assets/icons/Burger.svg" class="ffburger">
