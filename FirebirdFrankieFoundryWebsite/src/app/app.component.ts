@@ -7,16 +7,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  route: string = 'design';
-  testRoute: string = this.router.url
-
   constructor(private router: Router ) {
   }
 
   getActiveClass(name: string): string
   {
     if("/"+name == this.router.url)
+    {
       return "ff-nav-route-active";
+    }
     else return "ff-nav-route"; 
   }
+
+  isVisible(name: string): boolean
+  {
+    if("/"+name == this.router.url)
+    {
+      return true;
+    }
+    else return false; 
+  }
+
 }
