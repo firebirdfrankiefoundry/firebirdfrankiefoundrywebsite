@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     }
     else return "ff-nav-route"; 
   }
-
+  
   isVisible(name: string): boolean
   {
     if("/"+name == this.router.url)

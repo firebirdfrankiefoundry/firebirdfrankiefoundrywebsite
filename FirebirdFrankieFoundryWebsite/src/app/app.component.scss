@@ -23,18 +23,6 @@ a {
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
     font-size: 16px;
     width: 100%;
-    
-    // .ff-footer-copyright {
-    //     position: fixed;
-    //     left: 8px;
-    //     padding-bottom: 10px;
-    // }
-
-    // .ff-footer-socials {
-    //     position: fixed; 
-    //     right:8px;  
-    //     padding-bottom: 10px;
-    // }
 }
 
 .ff-nav {
@@ -105,4 +93,21 @@ a {
     .ff-nav-route:hover {
         text-decoration-line: underline;
     }
+}  
+
+.ff-side-nav-item {
+    color: $ff-honey-text-dark;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 35px;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center;
+    font-family: 'AlleyGarden';
+}
+
+.active-side-nav {
+    background-color: #2cb5b3 !important;
 }

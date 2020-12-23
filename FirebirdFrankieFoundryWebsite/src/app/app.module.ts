@@ -14,6 +14,8 @@ import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
 import { MatExpansionModule } from '@angular/material/expansion'
 import { MatBadgeModule } from '@angular/material/badge'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -41,6 +43,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatSelectModule,
     MatExpansionModule,
     MatBadgeModule,
+    MatSidenavModule,
+    MatListModule,
     FlexLayoutModule
   ],
   providers: [],

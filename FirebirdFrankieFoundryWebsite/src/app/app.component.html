@@ -9,15 +9,32 @@
       <button routerLink="/design"  [fxShow.xs]='isVisible("design")'  mat-flat-button [ngClass]="getActiveClass('design')"  disableRipple>design</button>
       <button routerLink="/contact" [fxShow.xs]='isVisible("contact")' mat-flat-button [ngClass]="getActiveClass('contact')" disableRipple>contact</button>
     <span class="toolbar-spacer"></span>
-    <button mat-fab class="ff-fab-right">
+    <button mat-fab class="ff-fab-right" (click)="drawer.toggle()">
       <img src="../assets/icons/Burger.svg" class="ffburger">
     </button>
 </mat-toolbar>
 </div>
 
+<mat-drawer-container style="height:100%">
+  <mat-drawer #drawer mode="over" position="end" autosize>
+    <mat-nav-list class="container-center" style="margin-top: 64px">
+      <a class="ff-side-nav-item" mat-list-item routerLink="/gallery" [routerLinkActive]="['active-side-nav']" disableRipple> 
+        Gallery
+      </a>
+      <a class="ff-side-nav-item" mat-list-item routerLink="/design"  [routerLinkActive]="['active-side-nav']" disableRipple>
+        Design
+      </a>
+      <a class="ff-side-nav-item" mat-list-item routerLink="/contact" [routerLinkActive]="['active-side-nav']" disableRipple>
+        Contact
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    
+
+
 <div fxLayout="column" fxFlexFill role="main">
-  <!-- Change to z1 when scrolled -->
-  <div class="ff-toolbar-space"></div>
   <router-outlet style="height:100%"></router-outlet>
   <footer>
     <mat-toolbar class="ff-footer mat-elevation-z6">
@@ -47,3 +64,5 @@
     </mat-toolbar>  
   </footer>  
 </div>
+</mat-drawer-content>
+</mat-drawer-container>
