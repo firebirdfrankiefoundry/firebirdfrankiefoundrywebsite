@@ -7,6 +7,8 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  currentYear: number = (new Date()).getFullYear();  
+
   constructor(private router: Router ) {
   }
 

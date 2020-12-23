@@ -154,7 +154,7 @@ body {
 }
 
 footer {
-  height: 64px;
+  height: 48px;
 }
 
 h1 {
@@ -273,7 +273,7 @@ h2 {
     background-color: transparent;
     color: $ff-honey-text-dark;
     
-    font-family: 'LaUnica';
+    font-family: 'AlleyGarden';
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -281,4 +281,13 @@ h2 {
     text-align: center;
   
     margin-bottom: 25px;
+}
+
+.social-icon {
+  display: inline-flex;
+  font-size: 36px;
+  line-height: 40px;
+  vertical-align: -10px;
+  height: 35px !important;
+  width: 35px !important;
 }
