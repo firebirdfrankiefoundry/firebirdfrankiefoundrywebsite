@@ -154,7 +154,7 @@ body {
 }
 
 footer {
-  height: 48px;
+  height: auto;
 }
 
 h1 {
@@ -225,6 +225,15 @@ h2 {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+}
+
 .vertical-container {
   position: relative;
 }
@@ -237,11 +246,6 @@ h2 {
   transform: translateY(-50%);
   width: 100%;
 }
-
-.text-right {
-  text-align: right;
-}
-
 
 .container-1x1 {
   width: 100%;
@@ -290,4 +294,8 @@ h2 {
   vertical-align: -10px;
   height: 35px !important;
   width: 35px !important;
+}
+
+.width-100 {
+  width: 100%;
 }
