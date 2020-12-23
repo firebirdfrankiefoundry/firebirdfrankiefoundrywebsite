@@ -129,9 +129,11 @@ $theme: map_merge($FirebirdFrankieFoundryWebsite-theme, (background: $background
 }
 
 html, body { 
-  height: 100%;
   background-color: $dark-bg;
   color: $ff-honey-text;
+  height: 100%;
+  box-sizing:border-box;
+  margin: 0;
 }
 
 p {
@@ -149,6 +151,10 @@ p {
 body { 
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+footer {
+  height: 48px;
 }
 
 h1 {
@@ -267,7 +273,7 @@ h2 {
     background-color: transparent;
     color: $ff-honey-text-dark;
     
-    font-family: 'LaUnica';
+    font-family: 'AlleyGarden';
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -275,4 +281,13 @@ h2 {
     text-align: center;
   
     margin-bottom: 25px;
+}
+
+.social-icon {
+  display: inline-flex;
+  font-size: 36px;
+  line-height: 40px;
+  vertical-align: -10px;
+  height: 35px !important;
+  width: 35px !important;
 }

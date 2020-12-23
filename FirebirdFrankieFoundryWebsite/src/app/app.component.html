@@ -1,9 +1,5 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-</div>
-
-<div class="content" role="main">
-  <!-- Change to z1 when scrolled -->
   <mat-toolbar class="ff-nav mat-elevation-z6">
     <button mat-fab class="ff-fab-left">
       <img src="../assets/logo/Icon Monotone Black.svg" class="fflogo">
@@ -17,7 +13,26 @@
       <img src="../assets/icons/Burger.svg" class="ffburger">
     </button>
 </mat-toolbar>
+</div>
+
+<div fxLayout="column" fxFlexFill role="main">
+  <!-- Change to z1 when scrolled -->
   <div class="ff-toolbar-space"></div>
-  <router-outlet></router-outlet>
-  <footer></footer>
+  <router-outlet style="height:100%"></router-outlet>
+  <footer>
+    <mat-toolbar class="ff-footer mat-elevation-z6">
+      <span class="ff-footer-copyright"> 
+          Copyright &copy; {{ currentYear }} Firebird Frankie Foundry. Website in collaboration with&nbsp;<a href="https://www.linkedin.com/in/renton-mcintyre-9658b8133/">Renton McIntyre</a>.
+      </span>
+      <span class="text-right ff-footer-socials">
+        <mat-icon class="social-icon">poll</mat-icon>
+        &nbsp;
+        <mat-icon class="social-icon">poll</mat-icon>
+        &nbsp;
+        <mat-icon class="social-icon">poll</mat-icon>
+        &nbsp;
+        <mat-icon class="social-icon">poll</mat-icon>
+      </span>
+    </mat-toolbar>  
+  </footer>  
 </div>
