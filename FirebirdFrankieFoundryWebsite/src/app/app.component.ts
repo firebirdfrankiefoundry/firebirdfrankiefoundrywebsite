@@ -17,9 +17,9 @@ export class AppComponent implements OnInit {
         if (!(evt instanceof NavigationEnd)) {
             return;
         }
-        window.scrollTo(0, 0)
+        document.getElementsByTagName('mat-drawer-content')[0].scrollTo(0, 0)
     });
-}
+  }
 
   getActiveClass(name: string): string
   {
