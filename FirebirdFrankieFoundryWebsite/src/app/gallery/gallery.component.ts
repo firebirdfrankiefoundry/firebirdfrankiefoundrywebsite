@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api-service.service';
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
   expanded: boolean[] = [ false, false, false ]
-  constructor() { }
+  constructor(private apiService: ApiService) { 
+    
+  }
 
   ngOnInit(): void {
+    this.apiService.getExampleArtworks().subscribe(response => {
+      //do something with response
+      console.log(response);
+    }, err => {
+      console.log(err);
+    }, () => {
+    });
   }
 
   expandBlock(id: number): void {
