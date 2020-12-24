@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { ExampleImage } from './models/example-artwork.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getExampleArtworks(): Observable<string>
+  getExampleArtworks(packageID: number): Observable<ExampleImage[]>
   {
     let headers = new HttpHeaders()
     .append('Content-Type', 'application/json')
@@ -19,6 +20,6 @@ export class ApiService {
     .append('Access-Control-Allow-Methods', '*')
     .append('Access-Control-Allow-Origin', '*');
 
-    return this.http.get<string>(this.apiURL, { headers });
+    return this.http.get<ExampleImage[]>(this.apiURL + "/package/" + packageID, { headers });
   } 
 }

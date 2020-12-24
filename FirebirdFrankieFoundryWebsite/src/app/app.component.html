@@ -4,65 +4,75 @@
     <button mat-fab class="ff-fab-left">
       <img src="../assets/logo/Icon Monotone Black.svg" class="fflogo">
     </button>
-    <span class="toolbar-spacer"></span>    
-      <button routerLink="/gallery" [fxShow.xs]='isVisible("gallery")' mat-flat-button [ngClass]="getActiveClass('gallery')" disableRipple>gallery</button>
-      <button routerLink="/design"  [fxShow.xs]='isVisible("design")'  mat-flat-button [ngClass]="getActiveClass('design')"  disableRipple>design</button>
-      <button routerLink="/contact" [fxShow.xs]='isVisible("contact")' mat-flat-button [ngClass]="getActiveClass('contact')" disableRipple>contact</button>
+    <span class="toolbar-spacer"></span>
+    <button routerLink="/gallery" [fxShow.xs]='isVisible("gallery")' mat-flat-button
+      [ngClass]="getActiveClass('gallery')" disableRipple>gallery</button>
+    <button routerLink="/design" [fxShow.xs]='isVisible("design")' mat-flat-button [ngClass]="getActiveClass('design')"
+      disableRipple>design</button>
+    <button routerLink="/contact" [fxShow.xs]='isVisible("contact")' mat-flat-button
+      [ngClass]="getActiveClass('contact')" disableRipple>contact</button>
     <span class="toolbar-spacer"></span>
     <button mat-fab class="ff-fab-right" (click)="drawer.toggle()">
       <img src="../assets/icons/Burger.svg" class="ffburger">
     </button>
-</mat-toolbar>
+  </mat-toolbar>
 </div>
 
 <mat-drawer-container style="height:100%">
   <mat-drawer #drawer mode="over" position="end" autosize>
     <mat-nav-list class="container-center" style="margin-top: 64px">
-      <a class="ff-side-nav-item" mat-list-item routerLink="/gallery" [routerLinkActive]="['active-side-nav']" disableRipple> 
+      <a class="ff-side-nav-item" mat-list-item routerLink="/gallery" [routerLinkActive]="['active-side-nav']"
+        disableRipple>
         Gallery
       </a>
-      <a class="ff-side-nav-item" mat-list-item routerLink="/design"  [routerLinkActive]="['active-side-nav']" disableRipple>
+      <a class="ff-side-nav-item" mat-list-item routerLink="/design" [routerLinkActive]="['active-side-nav']"
+        disableRipple>
         Design
       </a>
-      <a class="ff-side-nav-item" mat-list-item routerLink="/contact" [routerLinkActive]="['active-side-nav']" disableRipple>
+      <a class="ff-side-nav-item" mat-list-item routerLink="/contact" [routerLinkActive]="['active-side-nav']"
+        disableRipple>
         Contact
       </a>
     </mat-nav-list>
   </mat-drawer>
 
   <mat-drawer-content>
-    
 
 
-<div fxLayout="column" fxFlexFill role="main">
-  <router-outlet style="height:100%"></router-outlet>
-  <footer>
-    <mat-toolbar class="ff-footer mat-elevation-z6">
-      <div fxLayout="row wrap" class="width-100 container-center"  [ngClass.sm]="'text-center'" [ngClass.xs]="'text-center'">
-        <div class="ff-footer-copyright" fxFlex="20%" fxFlex.lg="25%" fxFlex.md="40%" fxFlex.sm="100%" fxFlex.xs="100%"> 
-          <span class="width-100" style="white-space: normal">
-            Copyright &copy; {{ currentYear }} Firebird Frankie Foundry. 
-          </span>
-        </div>
-        <div class="ff-footer-copyright" fxFlex="20%" fxFlex.lg="30%" fxFlex.md="40%" fxFlex.sm="100%" fxFlex.xs="100%"   [ngClass.sm]="'text-center'" [ngClass.xs]="'text-center'"> 
-          <span class="width-100" style="white-space: normal">
-            Website in collaboration with&nbsp;<a href="https://www.linkedin.com/in/renton-mcintyre-9658b8133/">Renton McIntyre</a>.
-          </span>
-        </div>
 
-        <div fxFlex="40%" fxFlex.lg="25%" [fxHide.md]="true" [fxHide.sm]="true" [fxHide.xs]="true"></div>
-        <div class="text-right ff-footer-socials container-center" fxFlex="20%" fxFlex.sm="100%" fxFlex.xs="100%">
-          <mat-icon class="social-icon">poll</mat-icon>
-          &nbsp;
-          <mat-icon class="social-icon">poll</mat-icon>
-          &nbsp;
-          <mat-icon class="social-icon">poll</mat-icon>
-          &nbsp;
-          <mat-icon class="social-icon">poll</mat-icon>
-        </div>
-      </div>
-    </mat-toolbar>  
-  </footer>  
-</div>
-</mat-drawer-content>
+    <div fxLayout="column" fxFlexFill role="main">
+      <router-outlet style="height:100%"></router-outlet>
+      <footer>
+        <mat-toolbar class="ff-footer mat-elevation-z6">
+          <div fxLayout="row wrap" class="width-100 container-center" [ngClass.sm]="'text-center'"
+            [ngClass.xs]="'text-center'">
+            <div class="ff-footer-copyright" fxFlex="20%" fxFlex.lg="25%" fxFlex.md="40%" fxFlex.sm="100%"
+              fxFlex.xs="100%">
+              <span class="width-100" style="white-space: normal">
+                Copyright &copy; {{ currentYear }} Firebird Frankie Foundry.
+              </span>
+            </div>
+            <div class="ff-footer-copyright" fxFlex="20%" fxFlex.lg="30%" fxFlex.md="40%" fxFlex.sm="100%"
+              fxFlex.xs="100%" [ngClass.sm]="'text-center'" [ngClass.xs]="'text-center'">
+              <span class="width-100" style="white-space: normal">
+                Website in collaboration with&nbsp;<a
+                  href="https://www.linkedin.com/in/renton-mcintyre-9658b8133/">Renton McIntyre</a>.
+              </span>
+            </div>
+
+            <div fxFlex="40%" fxFlex.lg="25%" [fxHide.md]="true" [fxHide.sm]="true" [fxHide.xs]="true"></div>
+            <div class="text-right ff-footer-socials container-center" fxFlex="20%" fxFlex.sm="100%" fxFlex.xs="100%">
+              <mat-icon class="social-icon">poll</mat-icon>
+              &nbsp;
+              <mat-icon class="social-icon">poll</mat-icon>
+              &nbsp;
+              <mat-icon class="social-icon">poll</mat-icon>
+              &nbsp;
+              <mat-icon class="social-icon">poll</mat-icon>
+            </div>
+          </div>
+        </mat-toolbar>
+      </footer>
+    </div>
+  </mat-drawer-content>
 </mat-drawer-container>

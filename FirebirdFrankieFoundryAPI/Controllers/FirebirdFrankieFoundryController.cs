@@ -22,10 +22,11 @@ namespace FirebirdFrankieFoundryAPI.Controllers
         // }
 
         [HttpGet]
-        public IList<ExampleImage> Get()
+        [Route("package/{package_id}")]
+        public IList<ExampleImage> Get(int package_id)
         {
             var mongoService = new MongoService();
-            return mongoService.GetPackage(1);
+            return mongoService.GetPackage(package_id);
         }
     }
 }
