@@ -1,7 +1,7 @@
-import { ExampleArtwork } from './example-artwork.model';
+import { ContactRequest } from './contact-request.model';
 
-describe('ExampleArtwork', () => {
+describe('ContactRequest', () => {
   it('should create an instance', () => {
-    expect(new ExampleArtwork()).toBeTruthy();
+    expect(new ContactRequest()).toBeTruthy();
   });
 });

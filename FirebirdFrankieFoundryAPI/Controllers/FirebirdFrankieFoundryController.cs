@@ -15,18 +15,20 @@ namespace FirebirdFrankieFoundryAPI.Controllers
         {
         }
 
-        // [HttpGet]
-        // public string Get()
-        // {
-        //     return "test";
-        // }
-
         [HttpGet]
         [Route("package/{package_id}")]
         public IList<ExampleImage> Get(int package_id)
         {
             var mongoService = new MongoService();
             return mongoService.GetPackage(package_id);
+        }
+
+        [HttpPost]
+        [Route("email")]
+        public void EmailQuery([FromBody] ContactRequest contactRequest)
+        {
+            var emailService = new EmailService();
+            emailService.SendEmail(contactRequest);   
         }
     }
 }

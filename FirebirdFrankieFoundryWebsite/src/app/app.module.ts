@@ -6,8 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatButtonModule } from '@angular/material/button'; 
-import { MatIconModule } from '@angular/material/icon'; 
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card'
@@ -17,6 +17,10 @@ import { MatExpansionModule } from '@angular/material/expansion'
 import { MatBadgeModule } from '@angular/material/badge'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -46,7 +50,10 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatExpansionModule,
     MatBadgeModule,
     MatSidenavModule,
+    MatSnackBarModule,
     MatListModule,
+    MatAutocompleteModule,
+    FormsModule,
     FlexLayoutModule
   ],
   providers: [],
