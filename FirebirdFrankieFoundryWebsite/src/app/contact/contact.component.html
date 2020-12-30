@@ -71,33 +71,33 @@
         <div fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%">
             <div class="ff-card-container">
                 <h1>Contact Form</h1>
-                <div fxLayout="row wrap" fxLayoutGap="4px grid" class="ff-form">
-                    <div fxFlex="50%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+                <div fxLayout="row wrap" fxLayoutGap="16px grid" class="ff-form">
+                    <div class="padding-bottom-none" fxFlex="50%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Name</mat-label>
                             <input matInput [(ngModel)]="name" required #nameInput="ngModel">
                         </mat-form-field>
                     </div>
-                    <div fxFlex="50%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%">
+                    <div class="padding-bottom-none" fxFlex="50%" fxFlex.md="50%" fxFlex.sm="50%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Surname</mat-label>
                             <input matInput [(ngModel)]="surname" required #surnameInput="ngModel">
                         </mat-form-field>
                     </div>
-                    <div fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                    <div class="padding-bottom-none" fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Company Name</mat-label>
                             <input matInput [(ngModel)]="companyName">
                         </mat-form-field>
                     </div>
-                    <div fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                    <div class="padding-bottom-none" fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Email</mat-label>
                             <input matInput [(ngModel)]="email" type="email" required email
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #emailInput="ngModel">
                         </mat-form-field>
                     </div>
-                    <div fxFlex="20%" fxFlex.md="20%" fxFlex.sm="20%" fxFlex.xs="30%">
+                    <div class="padding-bottom-none" fxFlex="20%" fxFlex.md="20%" fxFlex.sm="20%" fxFlex.xs="30%">
                         <mat-form-field appearance="fill">
                             <mat-label>Country Code</mat-label>
                             <mat-select [(ngModel)]="phonePrefix">
@@ -124,13 +124,13 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <div fxFlex="80%" fxFlex.md="80%" fxFlex.sm="80%" fxFlex.xs="70%">
+                    <div class="padding-bottom-none" fxFlex="80%" fxFlex.md="80%" fxFlex.sm="80%" fxFlex.xs="70%">
                         <mat-form-field appearance="fill">
                             <mat-label>Phone Number</mat-label>
                             <input matInput [(ngModel)]="phoneNumber">
                         </mat-form-field>
                     </div>
-                    <div fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                    <div class="padding-bottom-none" fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Category</mat-label>
                             <mat-select [(ngModel)]="category" required #categoryInput="ngModel">
@@ -146,17 +146,17 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <div fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                    <div class="padding-bottom-none" fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
                         <mat-form-field appearance="fill">
                             <mat-label>Details</mat-label>
                             <textarea rows="15" matInput [(ngModel)]="message" required
                                 #messageInput="ngModel" ngTrim="false"></textarea>
                         </mat-form-field>
                     </div>
-                    <div fxFlex="100%" class="text-right">
+                    <div class="padding-bottom-none" fxFlex="100%" class="text-right">
                         <button mat-raised-button color="primary"
-                            [disabled]="nameInput.invalid || surnameInput.invalid || categoryInput.invalid || emailInput.invalid || messageInput.invalid"
-                            style="width: 100px; height: 100%; margin-right: 18px" (click)="submit()" (click)="nameInput.setPristine()">SUBMIT</button>
+                        [disabled]="nameInput.invalid || surnameInput.invalid || categoryInput.invalid || emailInput.invalid || messageInput.invalid"
+                        style="width: 100px; height: 100%; margin-right: 18px" (click)="submit()" >SUBMIT</button>
                     </div>
                 </div>
             </div>

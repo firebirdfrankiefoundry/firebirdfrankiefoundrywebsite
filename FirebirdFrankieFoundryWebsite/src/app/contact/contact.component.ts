@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {
   MatSnackBar,
   MatSnackBarHorizontalPosition,
@@ -26,6 +26,8 @@ export class ContactComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'end';
   verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
+  @ViewChild('nameInput') nameInput: ElementRef;
+
   constructor(private apiService: ApiService, private _snackBar: MatSnackBar) {
 
   }
@@ -45,25 +47,22 @@ export class ContactComponent implements OnInit {
 
     this.apiService.contact(contactRequest).subscribe(response => {
       this.openSnackBar();
-      this.category = "";
-      this.name = "";
-      this.surname = "";
-      this.phoneNumber = "";
-      this.phonePrefix = "";
-      this.companyName = "";
-      this.email = "";
-      this.message = "";
     }, err => {
       console.log(err);
+      this.openSnackBar();
     }, () => {
     });
   }
 
   openSnackBar() {
-    this._snackBar.open('Your message has been sent. I\'ll get back to you ASAP.', 'OK', {
+    const snackbarRef = this._snackBar.open('Your message has been sent. I\'ll get back to you ASAP.', 'OK', {
       duration: 10000,
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
+    });
+
+    snackbarRef.afterDismissed().subscribe(() => {
+      location.reload();
     });
   }
 }
