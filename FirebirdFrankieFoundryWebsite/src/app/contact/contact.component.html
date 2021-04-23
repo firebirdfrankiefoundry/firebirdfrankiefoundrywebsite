@@ -127,7 +127,7 @@
                     <div class="padding-bottom-none" fxFlex="80%" fxFlex.md="80%" fxFlex.sm="80%" fxFlex.xs="70%">
                         <mat-form-field appearance="fill">
                             <mat-label>Phone Number</mat-label>
-                            <input matInput [(ngModel)]="phoneNumber">
+                            <input matInput [(ngModel)]="phoneNumber" pattern="^[0-9]*$">
                         </mat-form-field>
                     </div>
                     <div class="padding-bottom-none" fxFlex="100%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
